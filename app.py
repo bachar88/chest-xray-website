@@ -88,7 +88,7 @@ if uploaded_file is not None:
     with col1:
         st.image(image, caption="Uploaded X-ray", use_container_width=True)
     with col2:
-        st.image(overlayed, caption="Grad-CAM: where the model looked", use_column_width=True)
+        st.image(overlayed, caption="Grad-CAM: where the model looked",use_container_width=True)
 
     if is_abnormal:
         st.error(f"⚠️ Abnormality detected: **{predicted_class}**")
